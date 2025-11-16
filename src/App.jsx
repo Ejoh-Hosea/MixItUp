@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import SinglePageError from "./pages/SinglePageError";
 import { loader as landingLoader } from "./pages/Landing";
+import { action as newsletterAction } from "./pages/Newsletter";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "newsletter",
         element: <Newsletter />,
+        action: newsletterAction,
       },
       {
         path: "about",
