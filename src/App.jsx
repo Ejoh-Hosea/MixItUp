@@ -9,6 +9,15 @@ import SinglePageError from "./pages/SinglePageError";
 import { loader as landingLoader } from "./pages/Landing";
 import { action as newsletterAction } from "./pages/Newsletter";
 import { loader as singleCocktailLoader } from "./pages/Cocktail";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queryies: {
+      staleTime: 1000 * 60 * 5,
+    },
+  },
+});
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,7 +50,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />;
+    </QueryClientProvider>
+  );
 }
 
 export default App;
