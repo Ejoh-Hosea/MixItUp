@@ -24,7 +24,7 @@ const Navbar = () => {
   );
 };
 const Wrapper = styled.nav`
-  background: var(--white);
+  background: #f0f2f7;
   .nav-center {
     width: var(--view-width);
     max-width: var(--max-width);
@@ -51,10 +51,10 @@ const Wrapper = styled.nav`
     letter-spacing: 2px;
   }
   .nav-link:hover {
-    color: var(--primary-500);
+    color: #1d4ed8;
   }
   .active {
-    color: var(--primary-500);
+    color: #1d4ed8;
   }
   @media (min-width: 768px) {
     .nav-center {

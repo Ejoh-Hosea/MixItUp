@@ -104,17 +104,17 @@ const Wrapper = styled.div`
     padding-top: 2rem;
   }
   .drink p {
-    font-weight: 700;
+    font-weight: 500;
     text-transform: capitalize;
     line-height: 2;
     margin-bottom: 1rem;
   }
   .drink-data {
     margin-right: 0.5rem;
-    background: var(--primary-300);
+    background: #ede9fe;
     padding: 0.25rem 0.5rem;
     border-radius: var(--borderRadius);
-    color: var(--primary-700);
+    color: #5b21b6;
     letter-spacing: var(--letterSpacing);
   }
   .ing {
